@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: hiri-website
+    runtime: static
+    buildCommand: npm run build
+    staticPublishPath: out
+    previews:
+      generation: automatic
