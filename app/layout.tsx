@@ -25,6 +25,13 @@ export const metadata: Metadata = {
   },
   description: siteDescription,
   applicationName: siteName,
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon.png", type: "image/png", sizes: "any" },
+    ],
+    apple: [{ url: "/favicon.png" }],
+  },
   keywords: [
     "creative writing",
     "writing course",
