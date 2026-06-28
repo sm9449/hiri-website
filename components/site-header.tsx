@@ -21,9 +21,17 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <Link href="/pricing" className="button button-primary header-cta">
-          Enrol Now
-        </Link>
+        <div className="header-actions">
+          <a
+            href="https://app.hiri.uk"
+            className="button header-secondary-cta"
+          >
+            Continue Lessons
+          </a>
+          <Link href="/pricing" className="button button-primary header-cta">
+            Enrol Now
+          </Link>
+        </div>
       </div>
     </header>
   );
