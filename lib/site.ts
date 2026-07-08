@@ -7,10 +7,15 @@ export const primaryNavigation = [
   { href: "/", label: "Home" },
   { href: "/course", label: "Course" },
   { href: "/about-shaanzae", label: "About Shaanzae" },
-  { href: "/pricing", label: "Pricing" },
   { href: "/sample-lesson", label: "Sample Lesson" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
+] as const;
+
+export const footerNavigation = [
+  ...primaryNavigation,
+  { href: "/enrolment", label: "Enrol Now" },
+  { href: "https://app.hiri.uk", label: "Continue Lessons" },
 ] as const;
 
 export const teachingPillars = [
@@ -104,9 +109,14 @@ export const faqItems = [
       "No. The marketing website is separate from the student app at app.hiri.uk and the backend at api.hiri.uk.",
   },
   {
-    question: "Can I enrol now?",
+    question: "How does enrolment work?",
     answer:
-      "The website is ready to explain the course and collect interest, but if payment integration is not connected yet, enrolment remains opening soon.",
+      "HIRI enrolment is currently handled on a guided basis. Families can request enrolment through the website, and programme details are shared directly before access is issued.",
+  },
+  {
+    question: "Is HIRI open to everyone?",
+    answer:
+      "HIRI is designed for students who are ready to complete structured writing tasks and engage with feedback. Enrolment may depend on suitability, cohort timing, and available places.",
   },
 ] as const;
 

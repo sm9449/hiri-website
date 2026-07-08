@@ -28,7 +28,7 @@ export default function HomePage() {
               </p>
               <div className="hero-actions">
                 <ButtonLink href="/course">View Course</ButtonLink>
-                <ButtonLink href="/pricing" variant="secondary">
+                <ButtonLink href="/enrolment" variant="secondary">
                   Enrol Now
                 </ButtonLink>
               </div>
@@ -36,14 +36,14 @@ export default function HomePage() {
 
             <aside className="hero-panel" aria-label="Summary panel">
               <div className="panel-note">
-                <p className="price-label">What HIRI is</p>
+                <p className="panel-label">What HIRI is</p>
                 <p>
                   A guided 4-week creative writing course focused on practice,
                   feedback, and confidence.
                 </p>
               </div>
               <div className="panel-note">
-                <p className="price-label">What HIRI is not</p>
+                <p className="panel-label">What HIRI is not</p>
                 <p>
                   It is not a self-serve AI writing app and it is not a student
                   dashboard. The marketing site stays separate from app.hiri.uk.
@@ -133,14 +133,14 @@ export default function HomePage() {
           <div className="cta-band">
             <div className="section-heading" style={{ marginBottom: 0 }}>
               <p className="eyebrow">Next step</p>
-              <h2>See the course structure, pricing, and sample lesson details.</h2>
+              <h2>See the course structure, sample lesson, and enrolment details.</h2>
               <p>
                 The website is built to inform prospective students clearly and
                 move them toward enrolment without exaggeration or clutter.
               </p>
             </div>
             <div className="hero-actions" style={{ marginTop: "1.5rem" }}>
-              <ButtonLink href="/pricing" variant="secondary">
+              <ButtonLink href="/enrolment" variant="secondary">
                 Enrol Now
               </ButtonLink>
               <ButtonLink href="/sample-lesson" variant="ghost">

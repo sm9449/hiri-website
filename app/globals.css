@@ -473,14 +473,7 @@ p {
   padding: 1.5rem;
 }
 
-.price-figure {
-  display: flex;
-  align-items: baseline;
-  gap: 0.4rem;
-  margin: 1rem 0;
-}
-
-.price-label {
+.panel-label {
   color: var(--accent);
   font-weight: 700;
   text-transform: uppercase;
@@ -488,19 +481,47 @@ p {
   font-size: 0.76rem;
 }
 
-.price-value {
-  font-family: var(--font-cormorant), serif;
-  font-size: clamp(2.4rem, 4vw, 3.6rem);
-}
-
 .contact-form {
   display: grid;
   gap: 1rem;
 }
 
+.enrolment-summary {
+  display: grid;
+  gap: 1rem;
+  max-width: 860px;
+}
+
 .field-group {
   display: grid;
   gap: 0.45rem;
+}
+
+.form-status {
+  padding: 0.95rem 1rem;
+  border-radius: 14px;
+  background: rgba(13, 75, 67, 0.1);
+  border: 1px solid rgba(13, 75, 67, 0.18);
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+.enrolment-steps {
+  margin: 0.8rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.enrolment-steps li + li {
+  margin-top: 0.65rem;
+}
+
+.enrolment-form-shell {
+  max-width: 860px;
+}
+
+.enrolment-form {
+  margin-top: 1rem;
 }
 
 label {

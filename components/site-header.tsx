@@ -28,7 +28,7 @@ export function SiteHeader() {
           >
             Continue Lessons
           </a>
-          <Link href="/pricing" className="button button-primary header-cta">
+          <Link href="/enrolment" className="button button-primary header-cta">
             Enrol Now
           </Link>
         </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { primaryNavigation, siteName } from "@/lib/site";
+import { footerNavigation, siteName } from "@/lib/site";
 
 export function SiteFooter() {
   return (
@@ -14,10 +14,16 @@ export function SiteFooter() {
         </div>
 
         <nav className="footer-links" aria-label="Footer navigation">
-          {primaryNavigation.map((item) => (
-            <Link key={item.href} href={item.href}>
-              {item.label}
-            </Link>
+          {footerNavigation.map((item) => (
+            item.href.startsWith("http") ? (
+              <a key={item.href} href={item.href}>
+                {item.label}
+              </a>
+            ) : (
+              <Link key={item.href} href={item.href}>
+                {item.label}
+              </Link>
+            )
           ))}
         </nav>
 

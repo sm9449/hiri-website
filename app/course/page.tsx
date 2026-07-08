@@ -71,10 +71,10 @@ export default function CoursePage() {
         <section className="section">
           <div className="cta-band">
             <p className="eyebrow">Ready to continue</p>
-            <h2>Review pricing and enrolment details next.</h2>
-            <p>The course page explains the structure. The pricing page explains how enrolment is presented on launch.</p>
+            <h2>Request enrolment next.</h2>
+            <p>The course page explains the structure. The enrolment page explains how access is handled privately.</p>
             <div className="hero-actions">
-              <ButtonLink href="/pricing" variant="secondary">
+              <ButtonLink href="/enrolment" variant="secondary">
                 Enrol Now
               </ButtonLink>
               <ButtonLink href="/sample-lesson" variant="ghost">

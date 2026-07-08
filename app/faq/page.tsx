@@ -5,7 +5,7 @@ import { faqItems } from "@/lib/site";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Find answers about the HIRI creative writing course, its human-led teaching model, and how it differs from the student app.",
+    "Find answers about the HIRI creative writing course, its human-led teaching model, and the guided enrolment process.",
   alternates: {
     canonical: "/faq",
   },
