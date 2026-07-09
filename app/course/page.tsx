@@ -74,7 +74,7 @@ export default function CoursePage() {
             <h2>Request enrolment next.</h2>
             <p>The course page explains the structure. The enrolment page explains how access is handled privately.</p>
             <div className="hero-actions">
-              <ButtonLink href="/enrolment" variant="secondary">
+              <ButtonLink href="https://app.hiri.uk/enroll" variant="secondary">
                 Enroll Now
               </ButtonLink>
               <ButtonLink href="/sample-lesson" variant="ghost">

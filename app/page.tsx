@@ -28,7 +28,7 @@ export default function HomePage() {
               </p>
               <div className="hero-actions">
                 <ButtonLink href="/course">View Course</ButtonLink>
-                <ButtonLink href="/enrolment" variant="secondary">
+                <ButtonLink href="https://app.hiri.uk/enroll" variant="secondary">
                   Enroll Now
                 </ButtonLink>
               </div>
@@ -140,7 +140,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="hero-actions" style={{ marginTop: "1.5rem" }}>
-              <ButtonLink href="/enrolment" variant="secondary">
+              <ButtonLink href="https://app.hiri.uk/enroll" variant="secondary">
                 Enroll Now
               </ButtonLink>
               <ButtonLink href="/sample-lesson" variant="ghost">

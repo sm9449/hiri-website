@@ -28,7 +28,7 @@ export function SiteHeader() {
           >
             Continue Lessons
           </a>
-          <Link href="/enrolment" className="button button-primary header-cta">
+          <Link href="https://app.hiri.uk/enroll" className="button button-primary header-cta">
             Enroll Now
           </Link>
         </div>
