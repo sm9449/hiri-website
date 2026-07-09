@@ -49,6 +49,11 @@ export function EnrolmentForm() {
       </div>
 
       <div className="field-group">
+        <label htmlFor="whatsappContact">WhatsApp Contact / Number</label>
+        <input id="whatsappContact" name="whatsappContact" type="text" />
+      </div>
+
+      <div className="field-group">
         <label htmlFor="studentAgeYearGroup">Student age / year group</label>
         <input
           id="studentAgeYearGroup"
