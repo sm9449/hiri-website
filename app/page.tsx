@@ -29,7 +29,7 @@ export default function HomePage() {
               <div className="hero-actions">
                 <ButtonLink href="/course">View Course</ButtonLink>
                 <ButtonLink href="/enrolment" variant="secondary">
-                  Enrol Now
+                  Enroll Now
                 </ButtonLink>
               </div>
             </div>
@@ -141,7 +141,7 @@ export default function HomePage() {
             </div>
             <div className="hero-actions" style={{ marginTop: "1.5rem" }}>
               <ButtonLink href="/enrolment" variant="secondary">
-                Enrol Now
+                Enroll Now
               </ButtonLink>
               <ButtonLink href="/sample-lesson" variant="ghost">
                 Explore Curriculum

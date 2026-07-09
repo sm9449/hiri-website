@@ -29,7 +29,7 @@ export function SiteHeader() {
             Continue Lessons
           </a>
           <Link href="/enrolment" className="button button-primary header-cta">
-            Enrol Now
+            Enroll Now
           </Link>
         </div>
       </div>

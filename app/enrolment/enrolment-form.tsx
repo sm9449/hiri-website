@@ -39,23 +39,13 @@ export function EnrolmentForm() {
       <input type="hidden" name="type" value="enrolment" />
 
       <div className="field-group">
-        <label htmlFor="parentGuardianName">Parent / guardian name</label>
-        <input
-          id="parentGuardianName"
-          name="parentGuardianName"
-          type="text"
-          required
-        />
+        <label htmlFor="studentName">Student name</label>
+        <input id="studentName" name="studentName" type="text" required />
       </div>
 
       <div className="field-group">
         <label htmlFor="email">Email</label>
         <input id="email" name="email" type="email" required />
-      </div>
-
-      <div className="field-group">
-        <label htmlFor="studentName">Student name</label>
-        <input id="studentName" name="studentName" type="text" required />
       </div>
 
       <div className="field-group">
@@ -83,7 +73,7 @@ export function EnrolmentForm() {
       </div>
 
       <button type="submit" className="button button-primary">
-        Enrol Now
+        Enroll Now
       </button>
 
       {submittedAt ? (

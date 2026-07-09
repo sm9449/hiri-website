@@ -75,7 +75,7 @@ export default function CoursePage() {
             <p>The course page explains the structure. The enrolment page explains how access is handled privately.</p>
             <div className="hero-actions">
               <ButtonLink href="/enrolment" variant="secondary">
-                Enrol Now
+                Enroll Now
               </ButtonLink>
               <ButtonLink href="/sample-lesson" variant="ghost">
                 View Sample Lesson

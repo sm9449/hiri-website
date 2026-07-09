@@ -14,7 +14,7 @@ export const primaryNavigation = [
 
 export const footerNavigation = [
   ...primaryNavigation,
-  { href: "/enrolment", label: "Enrol Now" },
+  { href: "/enrolment", label: "Enroll Now" },
   { href: "https://app.hiri.uk", label: "Continue Lessons" },
 ] as const;
 
