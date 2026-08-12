@@ -674,10 +674,11 @@ a:focus-visible {
   .header-secondary-cta,
   .header-cta {
     width: 100%;
-    min-height: 52px;
-    padding: 12px 20px;
+    min-height: 54px;
+    padding: 10px 18px;
     font-size: 18px;
     line-height: 1.2;
+    border-radius: 28px;
   }
 }
 
@@ -753,9 +754,10 @@ a:focus-visible {
   .header-secondary-cta,
   .header-cta {
     width: 100%;
-    min-height: 52px;
-    padding: 12px 20px;
+    min-height: 54px;
+    padding: 10px 18px;
     font-size: 18px;
     line-height: 1.2;
+    border-radius: 28px;
   }
 }
