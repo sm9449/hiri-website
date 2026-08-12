@@ -95,11 +95,7 @@ img {
   width: 3rem;
   height: 3rem;
   border-radius: 14px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
-  color: #fff;
-  font-family: var(--font-cormorant), serif;
-  font-size: 1.45rem;
-  letter-spacing: 0.08em;
+  object-fit: cover;
 }
 
 .brand-text {
@@ -182,6 +178,11 @@ img {
   display: flex;
   align-items: center;
   gap: 0.65rem;
+}
+
+.mobile-menu-toggle,
+.mobile-nav {
+  display: none;
 }
 
 .header-secondary-cta {
@@ -663,10 +664,6 @@ a:focus-visible {
     gap: 0.75rem;
   }
 
-  .site-nav {
-    gap: 0.75rem 1rem;
-  }
-
   .header-actions {
     width: 100%;
     margin-left: 0;
@@ -677,5 +674,88 @@ a:focus-visible {
   .header-secondary-cta,
   .header-cta {
     width: 100%;
+    min-height: 52px;
+    padding: 12px 20px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    position: relative;
+    gap: 0.75rem;
+    padding: 12px 0;
+  }
+
+  .brand {
+    gap: 0.7rem;
+  }
+
+  .brand-mark {
+    width: 62px;
+    height: 62px;
+    border-radius: 12px;
+    flex: 0 0 62px;
+  }
+
+  .brand-text strong {
+    font-size: clamp(1.15rem, 5vw, 1.5rem);
+    line-height: 1.1;
+  }
+
+  .brand-text span {
+    font-size: 0.95rem;
+    line-height: 1.25;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: transparent;
+    color: var(--accent);
+    font: inherit;
+    font-size: 1.45rem;
+    cursor: pointer;
+  }
+
+  .mobile-nav {
+    display: grid;
+    flex-basis: 100%;
+    gap: 0.15rem;
+    padding: 0.75rem 0 0.25rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .mobile-nav .nav-link {
+    padding: 0.65rem 0.25rem;
+  }
+
+  .header-actions {
+    width: 100%;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .header-secondary-cta,
+  .header-cta {
+    width: 100%;
+    min-height: 52px;
+    padding: 12px 20px;
+    font-size: 18px;
+    line-height: 1.2;
   }
 }
