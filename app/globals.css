@@ -690,6 +690,14 @@ a:focus-visible {
 }
 
 @media (max-width: 768px) {
+  .page {
+    padding-top: 24px;
+  }
+
+  .hero {
+    padding-top: 0;
+  }
+
   .header-inner {
     position: relative;
     gap: 0.75rem;
