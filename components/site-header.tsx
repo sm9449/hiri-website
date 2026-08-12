@@ -54,6 +54,9 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
+            <a href="https://app.hiri.uk" className="nav-link mobile-nav-secondary">
+              Continue Lessons
+            </a>
           </nav>
         )}
 

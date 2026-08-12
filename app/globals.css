@@ -750,12 +750,24 @@ a:focus-visible {
     padding: 0.65rem 0.25rem;
   }
 
+  .mobile-nav-secondary {
+    margin-top: 0.35rem;
+    padding-top: 0.9rem !important;
+    border-top: 1px solid var(--border);
+    color: var(--accent);
+    font-weight: 600;
+  }
+
   .header-actions {
     width: 100%;
     margin-left: 0;
     flex-direction: column;
     align-items: stretch;
     gap: 10px;
+  }
+
+  .site-header .header-actions {
+    display: none;
   }
 
   .header-secondary-cta,
