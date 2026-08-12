@@ -314,6 +314,39 @@ p {
   gap: 1rem;
 }
 
+.hero-authority { align-content: center; background: linear-gradient(145deg, rgba(13, 75, 67, 0.96), rgba(18, 61, 55, 0.96)); color: #fff; }
+.hero-authority .panel-label, .hero-authority p:last-of-type { color: rgba(255,255,255,.78); }
+.authority-quote { font-family: var(--font-cormorant), serif; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.05; }
+.credibility-strip { display: flex; flex-wrap: wrap; gap: .55rem 1rem; margin-top: 2rem; padding-top: 1.1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .82rem; font-weight: 600; }
+.credibility-strip span + span::before { content: "•"; color: var(--warm); margin-right: 1rem; }
+.credential-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.credential-card { padding: 1.35rem; min-height: 150px; border-radius: var(--radius-md); background: rgba(255,255,255,.82); border: 1px solid var(--border); }
+.credential-card h3 { margin-top: .65rem; font-size: 1.35rem; }
+.proof-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1rem; color: var(--accent-strong); font-weight: 600; font-size: .92rem; }
+.proof-row span { padding: 1rem; border-left: 3px solid var(--warm); }
+.section-tint { background: rgba(13,75,67,.06); }
+.learning-flow { display: grid; grid-template-columns: repeat(6, 1fr); gap: .65rem; }
+.flow-step { display: grid; gap: .8rem; min-height: 120px; padding: 1rem; align-content: space-between; border-radius: var(--radius-sm); background: var(--bg-elevated); border: 1px solid var(--border); }
+.flow-step span, .mentor-week { color: var(--warm); font-size: .78rem; font-weight: 700; letter-spacing: .12em; }
+.feature-split { align-items: center; }
+.feedback-card { background: linear-gradient(145deg, rgba(176,138,87,.16), rgba(255,255,255,.84)); }
+.feedback-card h3 { margin: .8rem 0; font-size: 2rem; }
+.section-dark { background: var(--accent-strong); color: #fff; }
+.section-dark .section-description, .section-dark .mentor-grid p { color: rgba(255,255,255,.76); }
+.section-dark .eyebrow { color: #d7bd91; }
+.mentor-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.mentor-grid article { padding: 1.25rem; border-top: 1px solid rgba(255,255,255,.35); }
+.mentor-grid h3 { margin: .8rem 0; font-size: 1.5rem; }
+.comparison { display: grid; grid-template-columns: .9fr 1.1fr; gap: 2rem; align-items: start; }
+.compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.compare-grid article { padding: 1.4rem; border-radius: var(--radius-md); background: rgba(255,255,255,.72); border: 1px solid var(--border); }
+.compare-highlight { background: rgba(13,75,67,.1) !important; border-color: rgba(13,75,67,.25) !important; }
+.outcome-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .7rem 2rem; color: var(--accent); font-weight: 700; }
+.outcome-grid span { color: var(--ink); font-weight: 500; margin-left: .4rem; }
+.parent-panel { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; padding: 2rem; border-radius: var(--radius-lg); background: rgba(255,255,255,.72); border: 1px solid var(--border); }
+.feature-indicators { display: grid; grid-template-columns: repeat(2, 1fr); gap: .7rem; align-content: center; }
+.feature-indicators strong { padding: .9rem 1rem; border-radius: 999px; background: var(--accent-soft); color: var(--accent-strong); font-size: .9rem; }
+
 .hero-panel .panel-note {
   padding: 1rem;
   border-radius: var(--radius-md);
@@ -629,6 +662,9 @@ a:focus-visible {
   .header-actions {
     margin-left: auto;
   }
+
+  .learning-flow { grid-template-columns: repeat(3, 1fr); }
+  .mentor-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 720px) {
@@ -665,6 +701,12 @@ a:focus-visible {
   .timeline-item {
     grid-template-columns: 1fr;
   }
+
+  .credential-grid, .proof-row, .comparison, .parent-panel { grid-template-columns: 1fr; }
+  .proof-row { gap: .5rem; }
+  .learning-flow { grid-template-columns: repeat(2, 1fr); }
+  .mentor-grid, .compare-grid, .outcome-grid { grid-template-columns: 1fr; }
+  .credibility-strip span + span::before { margin-right: .45rem; }
 
   .header-inner {
     gap: 0.75rem;
