@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 type SectionHeadingProps = {
   eyebrow?: string;
   title: string;
-  description?: string;
+  description?: ReactNode;
   as?: "h1" | "h2";
 };
 
