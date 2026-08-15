@@ -95,7 +95,7 @@ export const faqItems = [
   {
     question: "Who teaches the course?",
     answer:
-      "HIRI is built around the teaching of Shaanzae Shahid — published author, Cambridge PGCert graduate and former Head of English. Each lesson begins with focused teaching from Shaanzae around a specific creative-writing skill before the student puts that skill into practice. The Coach and Mentor extend that teaching between lessons rather than replace it.",
+      "Shaanzae Shahid leads the course. She is a published author, Head of English, and holds a PGCert in Teaching Creative Writing from the University of Cambridge. Students learn directly from Shaanzae through focused video lessons, then apply those skills in their own writing. HIRI’s Coach provides personalised feedback on each student’s work, while the Mentor follows their development across the course. Both are shaped by Shaanzae’s teaching methods.",
   },
   {
     question: "How does the Coach work?",
