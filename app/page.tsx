@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ButtonLink, Container, SectionHeading, Tag } from "@/components/ui";
 
 export const metadata: Metadata = {
@@ -23,7 +24,12 @@ export default function HomePage() {
     </div><aside className="hero-panel hero-authority"><p className="panel-label">The HIRI difference</p><p className="authority-quote">Writing grows through attention, practice and thoughtful guidance.</p><p>Shaanzae's teaching is at the centre. HIRI gives students a modern, personal way to keep applying it.</p><div className="tag-row"><Tag>Human-led</Tag><Tag>Structured</Tag><Tag>Personal</Tag></div></aside></div></Container></section>
 
     <section className="section authority-section"><Container><SectionHeading eyebrow="Shaanzae's experience & credentials" title="Learn from someone who teaches writing — and writes." description="Shaanzae Shahid is a published author, university lecturer and Head of English whose career spans creative writing, English Literature, international qualifications and curriculum leadership. HIRI is built around her teaching — not around generic AI-generated content." />
-      <div className="profile-card">
+      <div className="profile-composition">
+        <figure className="profile-portrait">
+          <Image src="/Shaanzae.jpeg" alt="Shaanzae Shahid" fill sizes="(max-width: 720px) 320px, 30vw" priority />
+          <figcaption><strong>Shaanzae Shahid</strong><span>Published author · Educator · Head of English</span></figcaption>
+        </figure>
+        <div className="profile-card">
         <div className="profile-column">
           <p className="profile-label">Education</p>
           <div className="profile-item"><h3>PGCert: Teaching Creative Writing</h3><p>University of Cambridge</p></div>
@@ -44,6 +50,7 @@ export default function HomePage() {
           <div className="profile-subsection"><p className="profile-sub-label">Professional qualifications</p><p className="profile-list">IB DP English A: Language and Literature Workshop<br /><br />Cambridge IGCSE Literature in English Marking Workshop<br /><br />Cambridge International AS &amp; A Level Literature in English training</p></div>
         </div>
         <div className="profile-additional"><p className="profile-label">Additional experience</p><p>Guest judge for creative writing competitions; panellist at Kinnaird College and Khayaal Festival; literature-festival organising committee member; guest lecturer at Lahore School of Economics; workshop facilitator at Kinnaird College.</p></div>
+        </div>
       </div>
       <div className="outcomes-strip"><p className="profile-label">Student outcomes</p><div className="proof-row"><span>IB students achieving Top in Pakistan</span><span>University of London Academic Achievement Awards and First Class Honours</span><span>A Level student securing a Punjab Distinction</span></div></div>
     </Container></section>
