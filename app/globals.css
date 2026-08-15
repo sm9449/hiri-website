@@ -487,8 +487,10 @@ p {
 .course-progression { margin: 0 auto; max-width: 70ch; padding: 0 1rem; color: var(--accent-strong); text-align: center; font-family: var(--font-cormorant), serif; font-size: clamp(1.35rem, 2.2vw, 1.8rem); line-height: 1.2; }
 
 .sample-proof { margin: 1.5rem 0 0; color: var(--accent-strong); font-weight: 700; letter-spacing: .03em; }
-.lesson-cycle { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
-.lesson-cycle-card { display: grid; align-content: start; gap: .75rem; padding: 1.4rem; border-radius: var(--radius-md); background: rgba(255,255,255,.82); border: 1px solid var(--border); }
+.lesson-cycle { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.lesson-cycle::before { content: ""; position: absolute; top: 2.05rem; right: 1.5rem; left: 1.5rem; height: 1px; background: rgba(176,138,87,.55); }
+.lesson-cycle-card { position: relative; z-index: 1; display: grid; align-content: start; gap: .75rem; padding: 1.4rem; border-radius: var(--radius-md); background: rgba(255,255,255,.82); border: 1px solid var(--border); }
+.lesson-cycle-card:not(:last-child)::after { content: "→"; position: absolute; z-index: 2; top: 1.55rem; right: -.75rem; color: var(--warm); font-size: 1.1rem; background: var(--bg); }
 .lesson-cycle-card h2 { margin: 0; font-family: var(--font-cormorant), serif; font-size: clamp(1.45rem, 2vw, 1.8rem); line-height: 1.08; }
 .lesson-cycle-card p { margin: 0; color: var(--muted); }
 .lesson-cycle-card .panel-label { color: var(--accent); }
@@ -500,6 +502,10 @@ p {
 .writing-after { background: rgba(176,138,87,.12) !important; }
 .sample-note { margin: 1.25rem 0 .5rem; color: var(--muted); }
 .sample-emphasis { color: var(--accent-strong); font-weight: 700; }
+.sample-hero { padding-bottom: 1rem; }
+.sample-teaching { padding-top: 3.25rem; padding-bottom: 3.25rem; }
+.sample-credentials { margin: -.45rem 0 1rem; color: var(--accent); font-size: .86rem; font-weight: 700; letter-spacing: .04em; }
+.feedback-examples article { padding: 1.6rem; }
 .writing-task { padding: 2rem; border-radius: var(--radius-lg); background: rgba(176,138,87,.12); }
 .task-prompt { margin: 0; color: var(--accent-strong); font-family: var(--font-cormorant), serif; font-size: 1.5rem; }
 .feedback-examples { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
@@ -717,6 +723,7 @@ a:focus-visible {
   .learning-flow { grid-template-columns: repeat(3, 1fr); }
   .mentor-grid { grid-template-columns: repeat(2, 1fr); }
   .lesson-cycle { grid-template-columns: repeat(2, 1fr); }
+  .lesson-cycle::before, .lesson-cycle-card:not(:last-child)::after { display: none; }
   .writing-comparison { grid-template-columns: 1fr 1fr; }
   .writing-after { grid-column: 1 / -1; }
   .feedback-examples { grid-template-columns: 1fr; }
@@ -776,6 +783,7 @@ a:focus-visible {
   .learning-flow { grid-template-columns: repeat(2, 1fr); }
   .mentor-grid, .compare-grid, .outcome-grid { grid-template-columns: 1fr; }
   .lesson-cycle, .writing-comparison { grid-template-columns: 1fr; }
+  .lesson-cycle::before, .lesson-cycle-card:not(:last-child)::after { display: none; }
   .writing-after { grid-column: auto; }
   .writing-task { padding: 1.2rem; }
   .mentor-sample { margin-left: 0; margin-right: 0; padding-left: 1rem; padding-right: 1rem; }
