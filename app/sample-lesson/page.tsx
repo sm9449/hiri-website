@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const lessonSteps = [
-  ["1 · Learn", "Shaanzae teaches one focused writing skill.", "Each lesson begins with clear teaching around a specific creative-writing objective that students can understand and put into practice.", "Focused teaching. One clear objective. No unnecessary theory."],
+  ["1 · Learn", "Watch a focused video lesson with Shaanzae.", "Each lesson begins with Shaanzae teaching one clear creative-writing skill and showing why it matters before you put it into practice.", "Focused teaching. One clear objective. No unnecessary theory."],
   ["2 · Write", "You apply it in your own writing.", "A guided task asks you to make deliberate choices. Your ideas, language and voice remain your own.", "The goal is not to imitate. It is to make stronger choices for yourself."],
   ["3 · Coach", "Your writing receives personalised feedback.", "HIRI's Coach evaluates the writing you submitted — what is working, where it could become stronger and how well you applied the objective. Its feedback is modelled on Shaanzae's teaching approach.", "Feedback on your writing — not generic advice."],
   ["4 · Improve", "You use the feedback to write with greater control.", "Apply what you have learned, revise your thinking and continue with a clearer understanding of stronger writing. The Mentor also helps you recognise patterns in your development.", "Each lesson contributes to a bigger picture of your progress."],
@@ -16,7 +16,7 @@ const lessonSteps = [
 
 export default function SampleLessonPage() {
   return <div className="page sample-lesson-page"><Container>
-    <section className="sample-hero"><SectionHeading eyebrow="Sample lesson" title="See how HIRI turns an idea into better writing." description="A HIRI lesson is not simply something to watch. You learn a focused writing skill, put it into practice, receive personalised feedback and use that guidance to improve." as="h1" /><p className="page-lead">This sample shows the rhythm students follow throughout the four-week course.</p><p className="sample-proof">Learn → Write → Coach → Improve</p></section>
+    <section className="sample-hero"><SectionHeading eyebrow="Sample lesson" title="See how HIRI turns an idea into better writing." description="A HIRI lesson is not simply something to watch. You learn a focused writing skill, put it into practice, receive personalised feedback and use that guidance to improve." as="h1" /><p className="page-lead">This sample shows the rhythm students follow throughout the four-week course.</p><p className="sample-proof">Learn with Shaanzae → Write → Coach → Improve</p></section>
 
     <section className="section"><div className="lesson-cycle">{lessonSteps.map(([label, title, body, support]) => <article className="lesson-cycle-card" key={label}><p className="panel-label">{label}</p><h2>{title}</h2><p>{body}</p><strong>{support}</strong></article>)}</div></section>
 
