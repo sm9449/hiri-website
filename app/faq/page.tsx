@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ButtonLink, Container, SectionHeading } from "@/components/ui";
 import { faqItems } from "@/lib/site";
+import { FaqAccordion } from "./faq-accordion";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -24,14 +25,7 @@ export default function FaqPage() {
           />
         </section>
 
-        <section className="section faq-list">
-          {faqItems.map((item) => (
-            <article className="faq-item" key={item.question}>
-              <h3>{item.question}</h3>
-              <p>{item.answer}</p>
-            </article>
-          ))}
-        </section>
+        <FaqAccordion items={faqItems} />
 
         <section className="section">
           <div className="cta-band">
