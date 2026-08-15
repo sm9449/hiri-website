@@ -47,11 +47,10 @@ export default function HomePage() {
           <div className="profile-item"><h3>O Level English Language Instructor</h3><p>Taught creative writing to approximately 450 students</p></div>
         </div>
         <div className="profile-column">
-          <p className="profile-label">Published work &amp; professional development</p>
-          <div className="published-books"><p className="profile-sub-label">Published books</p><Image src="/books2.jpg" alt="Published books by Shaanzae Shahid" width={1000} height={697} /></div>
-          <div className="profile-subsection"><p className="profile-sub-label">Published work</p><p className="profile-list"><em>The Silver Cry</em> — novel<br /><em>Interference</em> — novel<br /><em>Refraction of Beauty</em> — novella<br /><em>The Magic Building</em> — short story</p></div>
-          <div className="profile-subsection"><p className="profile-sub-label">Professional qualifications</p><p className="profile-list">IB DP English A: Language and Literature Workshop<br /><br />Cambridge IGCSE Literature in English Marking Workshop<br /><br />Cambridge International AS &amp; A Level Literature in English training</p></div>
+          <p className="profile-label">Professional qualifications</p>
+          <div className="profile-subsection"><p className="profile-list">IB DP English A: Language and Literature Workshop<br /><br />Cambridge IGCSE Literature in English Marking Workshop<br /><br />Cambridge International AS &amp; A Level Literature in English training</p></div>
         </div>
+        <div className="published-books"><p className="profile-label">Published books</p><Image src="/books2.jpg" alt="Published books by Shaanzae Shahid" width={1000} height={697} /></div>
         <div className="profile-additional"><p className="profile-label">Additional experience</p><p>Guest judge for creative writing competitions; panellist at Kinnaird College and Khayaal Festival; literature-festival organising committee member; guest lecturer at Lahore School of Economics; workshop facilitator at Kinnaird College.</p></div>
         </div>
       </div>
