@@ -319,12 +319,24 @@ p {
 .authority-quote { font-family: var(--font-cormorant), serif; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.05; }
 .credibility-strip { display: flex; flex-wrap: wrap; gap: .55rem 1rem; margin-top: 2rem; padding-top: 1.1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .82rem; font-weight: 600; }
 .credibility-strip span + span::before { content: "•"; color: var(--warm); margin-right: 1rem; }
-.credential-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
-.credential-card { position: relative; display: grid; align-content: start; gap: .8rem; padding: 1.3rem 1.35rem 1.4rem; border-radius: var(--radius-md); background: rgba(255,255,255,.82); border: 1px solid var(--border); }
-.credential-card::before { content: ""; width: 2.4rem; height: 3px; background: var(--warm); }
-.credential-card .panel-label { margin: 0; color: var(--accent); font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
-.credential-card h3 { max-width: 22ch; margin: 0; font-family: var(--font-cormorant), serif; font-size: clamp(1.45rem, 1.8vw, 1.75rem); font-weight: 600; line-height: 1.08; }
-.proof-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.25rem; color: var(--accent-strong); font-weight: 600; font-size: .9rem; }
+.profile-card { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 2rem; border-radius: var(--radius-lg); background: rgba(255,255,255,.82); border: 1px solid var(--border); }
+.profile-column { padding: 0 1.7rem; }
+.profile-column:first-child { padding-left: 0; }
+.profile-column + .profile-column { border-left: 1px solid var(--border); }
+.profile-label, .profile-sub-label { margin: 0; color: var(--accent); font-size: .72rem; font-weight: 700; letter-spacing: .14em; line-height: 1.3; text-transform: uppercase; }
+.profile-column > .profile-label { padding-bottom: .8rem; border-bottom: 2px solid var(--warm); }
+.profile-item { padding: 1rem 0; border-bottom: 1px solid var(--border); }
+.profile-item:last-child { border-bottom: 0; }
+.profile-item h3 { margin: 0 0 .25rem; font-family: var(--font-cormorant), serif; font-size: clamp(1.35rem, 1.6vw, 1.65rem); font-weight: 600; line-height: 1.08; }
+.profile-item p, .profile-subsection p, .profile-additional p:last-child { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.5; }
+.profile-subsection { padding-top: 1rem; }
+.profile-sub-label { color: var(--muted); font-size: .68rem; }
+.profile-list { padding-top: .45rem; }
+.profile-additional { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 3fr; gap: 1.5rem; margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+.profile-additional .profile-label { padding-top: .15rem; }
+.outcomes-strip { margin-top: 1.5rem; }
+.outcomes-strip > .profile-label { margin-bottom: .75rem; }
+.proof-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; color: var(--accent-strong); font-weight: 600; font-size: .9rem; }
 .proof-row span { padding: .85rem 1rem; border-left: 3px solid var(--warm); line-height: 1.45; }
 .section-tint { background: rgba(13,75,67,.06); }
 .learning-flow { display: grid; grid-template-columns: repeat(6, 1fr); gap: .65rem; }
@@ -667,6 +679,10 @@ a:focus-visible {
 
   .learning-flow { grid-template-columns: repeat(3, 1fr); }
   .mentor-grid { grid-template-columns: repeat(2, 1fr); }
+  .profile-card { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .profile-column:nth-child(3) { padding: 1.5rem 0 0; border-top: 1px solid var(--border); }
+  .profile-column:nth-child(3) { border-left: 0; }
+  .profile-additional { grid-template-columns: 1fr 2fr; }
 }
 
 @media (max-width: 720px) {
@@ -704,7 +720,12 @@ a:focus-visible {
     grid-template-columns: 1fr;
   }
 
-  .credential-grid, .proof-row, .comparison, .parent-panel { grid-template-columns: 1fr; }
+  .profile-card, .proof-row, .comparison, .parent-panel { grid-template-columns: 1fr; }
+  .profile-card { padding: 1.25rem; }
+  .profile-column, .profile-column:first-child, .profile-column:nth-child(3) { padding: 0; border: 0; }
+  .profile-column + .profile-column { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+  .profile-additional { display: block; margin-top: 1.25rem; padding-top: 1.25rem; }
+  .profile-additional p:last-child { margin-top: .65rem; }
   .proof-row { gap: .5rem; }
   .learning-flow { grid-template-columns: repeat(2, 1fr); }
   .mentor-grid, .compare-grid, .outcome-grid { grid-template-columns: 1fr; }

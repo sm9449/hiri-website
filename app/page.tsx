@@ -8,15 +8,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-const credentials = [
-  ["University of Cambridge", "PGCert: Teaching Creative Writing"],
-  ["University of Glasgow", "MLitt Fantasy: English Literature"],
-  ["Lahore Grammar School Defence", "Head of Department: English"],
-  ["University of London programme", "Lecturer in English"],
-  ["Published writer", "The Silver Cry · Interference · Refraction of Beauty · The Magic Building"],
-  ["International English teaching", "IB DP, Cambridge IGCSE, AS & A Level Literature and English Language"],
-];
-
 const feedbackDimensions = ["Task completion", "Clarity", "Creativity", "Richness of detail", "Originality of imagery", "Emotional depth", "Voice maturity", "Sophistication of thought", "Cohesion", "Lesson-objective effectiveness"];
 const outcomes = ["Write with greater specificity and detail", "Create stronger imagery", "Express emotion more effectively", "Develop convincing characters", "Use dialogue with purpose", "Build stronger scenes", "Choose stronger verbs", "Develop a more mature written voice", "Recognise weaknesses and revise deliberately", "Build confidence through practice"];
 const mentorWeeks = [["WEEK 1", "What is beginning to emerge?", "An early, focused view of the student's writing."], ["WEEK 2", "What patterns are becoming visible?", "Strengths and weaknesses begin to become clearer."], ["WEEK 3", "What has improved — and what still needs attention?", "Guidance becomes increasingly informed by development."], ["WEEK 4", "What kind of writer are you becoming?", "A broader final review of progress across the course."]];
@@ -31,9 +22,30 @@ export default function HomePage() {
       <div className="credibility-strip" aria-label="Course credibility"><span>Cambridge PGCert</span><span>University of Glasgow MLitt</span><span>Head of English</span><span>Published Author</span><span>16 Guided Lessons</span></div>
     </div><aside className="hero-panel hero-authority"><p className="panel-label">The HIRI difference</p><p className="authority-quote">Writing grows through attention, practice and thoughtful guidance.</p><p>Shaanzae's teaching is at the centre. HIRI gives students a modern, personal way to keep applying it.</p><div className="tag-row"><Tag>Human-led</Tag><Tag>Structured</Tag><Tag>Personal</Tag></div></aside></div></Container></section>
 
-    <section className="section authority-section"><Container><SectionHeading eyebrow="Meet the educator" title="Learn from someone who teaches writing — and writes." description="Shaanzae Shahid is a published author, university lecturer and Head of English whose career spans creative writing, English Literature, international qualifications and curriculum leadership. HIRI is built around her teaching — not around generic AI-generated content." />
-      <div className="credential-grid">{credentials.map(([title, detail]) => <article className="credential-card" key={title}><p className="panel-label">{title}</p><h3>{detail}</h3></article>)}</div>
-      <div className="proof-row"><span>IB students achieving Top in Pakistan</span><span>University of London Academic Achievement Awards and First Class Honours</span><span>A Level student securing a Punjab Distinction</span></div>
+    <section className="section authority-section"><Container><SectionHeading eyebrow="Shaanzae's experience & credentials" title="Learn from someone who teaches writing — and writes." description="Shaanzae Shahid is a published author, university lecturer and Head of English whose career spans creative writing, English Literature, international qualifications and curriculum leadership. HIRI is built around her teaching — not around generic AI-generated content." />
+      <div className="profile-card">
+        <div className="profile-column">
+          <p className="profile-label">Education</p>
+          <div className="profile-item"><h3>PGCert: Teaching Creative Writing</h3><p>University of Cambridge</p></div>
+          <div className="profile-item"><h3>MLitt Fantasy: English Literature</h3><p>University of Glasgow</p></div>
+          <div className="profile-item"><h3>BA English</h3><p>University of London at LGS International Degree Programme</p></div>
+        </div>
+        <div className="profile-column">
+          <p className="profile-label">Professional experience</p>
+          <div className="profile-item"><h3>Head of Department: English</h3><p>Lahore Grammar School Defence</p></div>
+          <div className="profile-item"><h3>IB DP English A: Language and Literature Instructor</h3><p>LGS Defence</p></div>
+          <div className="profile-item"><h3>University of London Lecturer in English</h3><p>LGS International Degree Programme</p></div>
+          <div className="profile-item"><h3>O Level &amp; A Level English Literature Instructor</h3><p>LGS Defence</p></div>
+          <div className="profile-item"><h3>O Level English Language Instructor</h3><p>Taught creative writing to approximately 450 students</p></div>
+        </div>
+        <div className="profile-column">
+          <p className="profile-label">Published work &amp; professional development</p>
+          <div className="profile-subsection"><p className="profile-sub-label">Published work</p><p className="profile-list"><em>The Silver Cry</em><br /><em>Interference</em><br /><em>Refraction of Beauty</em><br /><em>The Magic Building</em></p></div>
+          <div className="profile-subsection"><p className="profile-sub-label">Professional qualifications</p><p className="profile-list">IB DP English A: Language and Literature Workshop<br /><br />Cambridge IGCSE Literature in English Marking Workshop<br /><br />Cambridge International AS &amp; A Level Literature in English training</p></div>
+        </div>
+        <div className="profile-additional"><p className="profile-label">Additional experience</p><p>Guest judge for creative writing competitions; panellist at Kinnaird College and Khayaal Festival; literature-festival organising committee member; guest lecturer at Lahore School of Economics; workshop facilitator at Kinnaird College.</p></div>
+      </div>
+      <div className="outcomes-strip"><p className="profile-label">Student outcomes</p><div className="proof-row"><span>IB students achieving Top in Pakistan</span><span>University of London Academic Achievement Awards and First Class Honours</span><span>A Level student securing a Punjab Distinction</span></div></div>
     </Container></section>
 
     <section className="section"><Container><SectionHeading eyebrow="Human + technology" title="Great teaching, amplified by intelligent technology." description="HIRI does not replace the teacher with AI. Shaanzae teaches the concepts, demonstrates the techniques and defines the learning journey. HIRI then helps each student apply those lessons through structured practice, feedback, reflection and personalised guidance." /><div className="grid-3"><article className="card"><p className="panel-label">Shaanzae teaches</p><h3>Expert instruction</h3><p>Demonstrations, examples and a carefully designed Creative English curriculum.</p></article><article className="card"><p className="panel-label">HIRI observes</p><h3>Useful evidence</h3><p>Each task is evaluated against the lesson objective and multiple dimensions of writing quality.</p></article><article className="card"><p className="panel-label">The student grows</p><h3>Visible progress</h3><p>Feedback, reflection and weekly Mentor guidance help students recognise strengths and correct weaknesses.</p></article></div></Container></section>
