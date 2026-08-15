@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Container, SectionHeading } from "@/components/ui";
+import { ButtonLink, Container, SectionHeading } from "@/components/ui";
 import { faqItems } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Find answers about the HIRI creative writing course, its human-led teaching model, and the guided enrolment process.",
+    "Find answers about HIRI’s Creative English course, Shaanzae’s teaching, personalised feedback, Mentor guidance and enrolment.",
   alternates: {
     canonical: "/faq",
   },
@@ -18,8 +18,8 @@ export default function FaqPage() {
         <section>
           <SectionHeading
             eyebrow="FAQ"
-            title="Common questions"
-            description="Answers are concise, supportable, and written for prospective students."
+            title="Questions before you begin?"
+            description="Everything you need to know about how HIRI works, who it is for, and what makes its approach to Creative English different."
             as="h1"
           />
         </section>
@@ -31,6 +31,19 @@ export default function FaqPage() {
               <p>{item.answer}</p>
             </article>
           ))}
+        </section>
+
+        <section className="section">
+          <div className="cta-band">
+            <p className="eyebrow">Still deciding?</p>
+            <h2>See how the course works — then decide if HIRI is right for you.</h2>
+            <p>Explore the four-week course structure or experience the Sample Lesson before you enrol.</p>
+            <div className="hero-actions">
+              <ButtonLink href="/course">View Course</ButtonLink>
+              <ButtonLink href="/sample-lesson" variant="ghost">View Sample Lesson</ButtonLink>
+              <ButtonLink href="https://app.hiri.uk/enroll" variant="secondary">Enroll Now</ButtonLink>
+            </div>
+          </div>
         </section>
       </Container>
     </div>

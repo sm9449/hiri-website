@@ -88,39 +88,64 @@ export const outcomes = [
 
 export const faqItems = [
   {
-    question: "Is HIRI an AI writing tool?",
+    question: "What makes HIRI different from a normal online writing course?",
     answer:
-      "No. HIRI is a guided creative writing education program. AI may support practice and feedback, but the product is human-led learning.",
+      "HIRI combines Shaanzae Shahid’s teaching with structured writing practice, personalised Coach feedback and a Mentor that follows your development across the course. Instead of treating each task as a one-off submission, HIRI builds a picture of how your writing is developing and uses that understanding to help guide what you should work on next.",
   },
   {
     question: "Who teaches the course?",
     answer:
-      "Miss Shaanzae Shahid is the lead educator and central guide for the learning experience.",
+      "HIRI is built around the teaching of Shaanzae Shahid — published author, Cambridge PGCert graduate and former Head of English. Each lesson begins with focused teaching from Shaanzae around a specific creative-writing skill before the student puts that skill into practice. The Coach and Mentor extend that teaching between lessons rather than replace it.",
   },
   {
-    question: "What is the course length?",
+    question: "How does the Coach work?",
     answer:
-      "The current course format is a focused 4-week structure designed to build writing confidence and practice in a manageable sequence.",
+      "The Coach looks closely at the writing you actually submitted. It considers how effectively you applied the lesson, the choices you made, what is already working and what could become stronger. Its feedback is shaped by Shaanzae’s teaching methods, so the guidance remains connected to the skill you have just learned. The Coach is there to help you understand what to improve and why — not simply correct the piece for you.",
+  },
+  {
+    question: "What does the Mentor do?",
+    answer:
+      "The Coach works with the writing in front of you. The Mentor looks across your development. As you progress through HIRI, the Mentor uses evidence from your lessons, feedback and reflection to recognise recurring strengths, habits and areas that deserve more attention. This means your work is not treated as if every lesson is the first time HIRI has seen you write.",
+  },
+  {
+    question: "Does HIRI write for the student?",
+    answer:
+      "No. HIRI is designed to develop the student as a writer, not produce writing on their behalf. The student creates the ideas, makes the language choices and writes the response. The Coach and Mentor provide guidance that helps the student understand those choices and make stronger ones next time.",
+  },
+  {
+    question: "Does HIRI remember my progress?",
+    answer:
+      "Yes, within the course learning experience. HIRI is designed to follow development across the four weeks rather than treat every submission independently. The Mentor can recognise patterns in previous work so that guidance becomes more relevant as the student progresses.",
+  },
+  {
+    question: "What happens after I submit a writing task?",
+    answer:
+      "Your writing is evaluated against the objective of the lesson and the qualities the task is designed to develop. You receive personalised feedback showing what is working, what could become stronger and what to think about next. That feedback becomes part of the wider picture of your development across the course.",
   },
   {
     question: "Who is the course for?",
     answer:
-      "It is designed for learners who want a clear, supportive path into creative writing and prefer structured teaching rather than a self-serve tool.",
+      "HIRI is for students who want to become more thoughtful, capable and confident writers through structured Creative English practice. It is especially suited to learners who are willing to write, reflect on feedback and improve through repeated practice rather than simply watch lessons passively.",
   },
   {
-    question: "Does the website include the student platform?",
+    question: "How long is the course?",
     answer:
-      "No. The marketing website is separate from the student app at app.hiri.uk and the backend at api.hiri.uk.",
+      "HIRI is a focused four-week course with 16 guided lessons. Each week develops a different part of the writing process, progressing from observation and expression through character, voice, structure and revision. The course is designed to create a clear progression rather than a loose collection of unrelated lessons.",
+  },
+  {
+    question: "How much time should I expect to spend on HIRI?",
+    answer:
+      "HIRI is designed to fit into a manageable four-week learning rhythm. Each lesson combines focused teaching with a writing task and feedback, so the emphasis is on regular, purposeful practice rather than long study sessions.",
+  },
+  {
+    question: "Is HIRI useful if I already write well?",
+    answer:
+      "Yes. HIRI is not only about fixing weak writing. Students who already write confidently can use the course to become more deliberate about voice, detail, emotional depth, structure, pacing and revision. The goal is to help students understand more clearly why their writing works and how to make strong choices consistently.",
   },
   {
     question: "How does enrolment work?",
     answer:
-      "HIRI enrolment is currently handled on a guided basis. Families can request enrolment through the website, and programme details are shared directly before access is issued.",
-  },
-  {
-    question: "Is HIRI open to everyone?",
-    answer:
-      "HIRI is designed for students who are ready to complete structured writing tasks and engage with feedback. Enrolment may depend on suitability, cohort timing, and available places.",
+      "Submit your enrolment details through the website. We review the student’s suitability and available course space, then share programme details privately. Once access is created, the student can begin the four-week course.",
   },
 ] as const;
 
