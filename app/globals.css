@@ -512,6 +512,7 @@ p {
 .feedback-examples article p:last-child { margin-bottom: 0; color: var(--muted); }
 .mentor-sample { margin-left: calc((1180px - 100vw) / 2); margin-right: calc((1180px - 100vw) / 2); padding-left: max(1rem, calc((100vw - 1180px) / 2)); padding-right: max(1rem, calc((100vw - 1180px) / 2)); }
 .mentor-sample .sample-emphasis { color: #fff; }
+.mentor-conclusion { margin: 1.5rem 0; max-width: 60ch; color: #fff; font-family: var(--font-cormorant), serif; font-size: clamp(1.45rem, 2.4vw, 2rem); line-height: 1.15; }
 .teaching-centre { border-top: 1px solid var(--border); }
 
 .list {
