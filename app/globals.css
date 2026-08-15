@@ -467,6 +467,10 @@ p {
   font-size: 0.82rem;
 }
 
+.timeline-item h3 { margin: 0 0 .45rem; font-family: var(--font-cormorant), serif; font-size: clamp(1.55rem, 2.2vw, 2rem); line-height: 1.08; }
+.timeline-focus { margin: 0 0 .5rem; color: var(--accent); font-weight: 600; }
+.timeline-item > div:last-child > p:last-child { margin-bottom: 0; color: var(--muted); }
+
 .split-panel {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -478,6 +482,9 @@ p {
   padding: 1.5rem;
   border-radius: var(--radius-lg);
 }
+
+.feature-strip > p + p { margin-top: 1rem; }
+.course-progression { margin: 0 auto; max-width: 70ch; padding: 0 1rem; color: var(--accent-strong); text-align: center; font-family: var(--font-cormorant), serif; font-size: clamp(1.35rem, 2.2vw, 1.8rem); line-height: 1.2; }
 
 .list {
   margin: 0;

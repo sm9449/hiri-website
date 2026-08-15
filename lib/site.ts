@@ -44,27 +44,31 @@ export const teachingPillars = [
 export const courseWeeks = [
   {
     week: "Week 1",
-    title: "Creative observation and expression",
+    title: "Stop overlooking the details that make writing vivid.",
+    focus: "Creative observation and expression",
     description:
-      "Students learn to notice the world more closely and transform observation into writing that feels vivid and intentional.",
+      "Train yourself to notice what others miss — then turn those observations into writing that feels specific, vivid and intentional.",
   },
   {
     week: "Week 2",
-    title: "Character, imagination, and voice",
+    title: "Find the voice that makes the writing yours.",
+    focus: "Character, imagination and voice",
     description:
-      "The course focuses on building memorable characters, strengthening imagination, and finding an authentic writerly voice.",
+      "Develop stronger characters, expand your imagination and begin writing with greater individuality and confidence.",
   },
   {
     week: "Week 3",
-    title: "Structure, conflict, and pacing",
+    title: "Learn how to hold a reader’s attention.",
+    focus: "Structure, conflict and pacing",
     description:
-      "Students explore how scenes work, how tension is created, and how story structure supports momentum and clarity.",
+      "Discover how tension, scene structure and pacing work together to give writing momentum and keep a reader engaged.",
   },
   {
     week: "Week 4",
-    title: "Revision, feedback, and final shaping",
+    title: "Turn good drafts into writing you are proud to show.",
+    focus: "Revision, feedback and final shaping",
     description:
-      "The final week turns drafts into polished pieces through revision, feedback, and deliberate shaping of the story.",
+      "Learn how to recognise what is working, strengthen what is not, and deliberately shape a more polished final piece.",
   },
 ] as const;
 

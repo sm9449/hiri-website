@@ -17,14 +17,13 @@ export default function CoursePage() {
       <Container>
         <section>
           <SectionHeading
-            eyebrow="Course"
-            title="The 4-week course structure"
-            description="Each week focuses on one stage of the writing process so learners can build skill with clarity and repetition."
+            eyebrow="Your 4-week writing journey"
+            title="Four weeks to become a more deliberate, confident writer."
+            description={<>You do not need months of theory to start writing better.<br /><br />HIRI is designed as an intensive four-week progression — each week building a different part of your writing, so you can see and feel the difference as your work develops.</>}
             as="h1"
           />
           <p className="page-lead">
-            HIRI keeps the course tightly structured. That makes the learning
-            easier to follow, easier to trust, and easier to complete.
+            <strong>Sixteen guided lessons. Personalised feedback. A Coach and Mentor that follow your progress throughout the course.</strong>
           </p>
         </section>
 
@@ -37,6 +36,7 @@ export default function CoursePage() {
                 </div>
                 <div>
                   <h3>{item.title}</h3>
+                  <p className="timeline-focus">{item.focus}</p>
                   <p>{item.description}</p>
                 </div>
               </article>
@@ -47,32 +47,32 @@ export default function CoursePage() {
         <section className="section">
           <div className="split-panel">
             <article className="feature-strip">
-              <h3>What the course reinforces</h3>
+              <h3>What should feel different by Week 4</h3>
               <ul className="list">
-                <li>Creative observation becomes usable writing material.</li>
-                <li>Voice develops through guided practice rather than guesswork.</li>
-                <li>Conflict and pacing help ideas become stories with momentum.</li>
-                <li>Revision becomes part of the creative process, not an afterthought.</li>
+                <li>You notice stronger ideas before you begin writing.</li>
+                <li>Your descriptions become more deliberate and specific.</li>
+                <li>Characters and scenes carry more emotional depth.</li>
+                <li>You understand why a piece of writing works — not just whether it “sounds good.”</li>
+                <li>Revision becomes a skill rather than a correction exercise.</li>
               </ul>
             </article>
 
             <article className="feature-strip">
-              <h3>How the structure helps learners</h3>
-              <ul className="list">
-                <li>Each week has a clear purpose.</li>
-                <li>Lessons can be explained and reviewed easily.</li>
-                <li>The sequence supports confidence and steady improvement.</li>
-                <li>The course stays focused on learning outcomes rather than software features.</li>
-              </ul>
+              <h3>You are not working through it alone</h3>
+              <p>Every lesson feeds into a learning journey built around your development.</p>
+              <p>Your Coach responds to the writing in front of you.<br />Your Mentor looks across your progress.<br />And Shaanzae’s teaching provides the method behind both.</p>
             </article>
           </div>
         </section>
 
+        <p className="course-progression">16 lessons. 4 weeks. One clear progression from instinctive writing to more deliberate writing.</p>
+
         <section className="section">
           <div className="cta-band">
-            <p className="eyebrow">Ready to continue</p>
-            <h2>Request enrolment next.</h2>
-            <p>The course page explains the structure. The enrolment page explains how access is handled privately.</p>
+            <p className="eyebrow">Ready to begin?</p>
+            <h2>Your next four weeks could change how you write.</h2>
+            <p>You can keep writing through trial and error — or spend four structured weeks learning what stronger writers actually do differently.</p>
+            <p><strong>Start the course and build the habits, judgement and confidence to shape better writing for yourself.</strong></p>
             <div className="hero-actions">
               <ButtonLink href="https://app.hiri.uk/enroll" variant="secondary">
                 Enroll Now
