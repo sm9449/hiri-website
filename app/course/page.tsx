@@ -19,11 +19,11 @@ export default function CoursePage() {
           <SectionHeading
             eyebrow="Your 4-week writing journey"
             title="Four weeks to become a more deliberate, confident writer."
-            description={<>You do not need months of theory to start writing better.<br /><br />HIRI is designed as an intensive four-week progression — each week building a different part of your writing, so you can see and feel the difference as your work develops.</>}
+            description={<>You do not need months of theory to start seeing a difference in your writing.<br /><br />HIRI is designed as an intensive four-week progression — each week building a different part of your writing, so you can see and feel the difference as your work develops.</>}
             as="h1"
           />
           <p className="page-lead">
-            <strong>Sixteen guided lessons. Personalised feedback. A Coach and Mentor that follow your progress throughout the course.</strong>
+            <strong>16 guided lessons. Personalised feedback. A Coach and Mentor that follow your progress.</strong>
           </p>
         </section>
 
@@ -61,11 +61,12 @@ export default function CoursePage() {
               <h3>You are not working through it alone</h3>
               <p>Every lesson feeds into a learning journey built around your development.</p>
               <p>Your Coach responds to the writing in front of you.<br />Your Mentor looks across your progress.<br />And Shaanzae’s teaching provides the method behind both.</p>
+              <p>The result is guidance that becomes more relevant as your writing develops.</p>
             </article>
           </div>
         </section>
 
-        <p className="course-progression">16 lessons. 4 weeks. One clear progression from instinctive writing to more deliberate writing.</p>
+        <p className="course-progression">16 lessons. 4 weeks. A clear progression from instinctive writing to writing with greater purpose, control and confidence.</p>
 
         <section className="section">
           <div className="cta-band">
