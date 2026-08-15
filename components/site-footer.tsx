@@ -8,8 +8,8 @@ export function SiteFooter() {
         <div className="footer-brand">
           <p className="footer-title">{siteName}</p>
           <p className="footer-copy">
-            A public-facing marketing website for a guided creative writing
-            course. The student app lives separately at app.hiri.uk.
+            Guided Creative English with Shaanzae Shahid — expert teaching,
+            structured practice and personalised support for developing writers.
           </p>
         </div>
 

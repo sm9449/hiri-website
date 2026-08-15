@@ -1,56 +1,35 @@
 import type { Metadata } from "next";
-import { Container, SectionHeading } from "@/components/ui";
-import { sampleLessonSteps } from "@/lib/site";
+import { ButtonLink, Container, SectionHeading } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Sample Lesson",
-  description:
-    "Preview a sample HIRI lesson structure with micro-teach, writing task, and example feedback style.",
-  alternates: {
-    canonical: "/sample-lesson",
-  },
+  description: "See how HIRI combines expert teaching, deliberate writing practice, personalised feedback and Mentor guidance.",
+  alternates: { canonical: "/sample-lesson" },
 };
 
+const lessonSteps = [
+  ["1 · Learn", "Shaanzae teaches one focused writing skill.", "Each lesson begins with clear teaching built around a specific creative-writing objective — something the student can understand, recognise and immediately put into practice.", "Focused teaching. One clear objective. No unnecessary theory."],
+  ["2 · Write", "You apply it in your own writing.", "A guided writing task asks you to make deliberate choices rather than simply reproduce an example. Your ideas, language and voice remain your own.", "The goal is not to imitate. It is to learn how to make stronger choices for yourself."],
+  ["3 · Coach", "Your writing receives personalised feedback.", "HIRI's Coach evaluates the writing you actually submitted — identifying what is working, where the piece could become stronger and how well you applied the lesson objective. The Coach is modelled on Shaanzae's teaching approach, so the feedback supports the same skills the lesson is designed to develop.", "Feedback on your writing — not generic advice."],
+  ["4 · Improve", "You use the feedback to write with greater control.", "Students can apply what they have learned, revise their thinking and continue through the course with a clearer understanding of what stronger writing requires. Across the course, the Mentor also looks beyond a single piece of work to help students recognise patterns in their development.", "Each lesson contributes to a bigger picture of your progress."],
+];
+
 export default function SampleLessonPage() {
-  return (
-    <div className="page">
-      <Container>
-        <section>
-          <SectionHeading
-            eyebrow="Sample lesson"
-            title="A preview of how learning feels"
-            description="This is an illustrative lesson structure only. It is not connected to the student app."
-            as="h1"
-          />
-          <p className="page-lead">
-            A strong sample lesson helps prospective students understand the
-            rhythm of the course before they enrol.
-          </p>
-        </section>
+  return <div className="page sample-lesson-page"><Container>
+    <section className="sample-hero"><SectionHeading eyebrow="Sample lesson" title="See how HIRI turns an idea into better writing." description="A HIRI lesson is not simply something to watch. You learn a focused writing skill, put it into practice, receive personalised feedback and use that guidance to improve." as="h1" /><p className="page-lead">This sample shows the rhythm students follow throughout the four-week course.</p><p className="sample-proof">Learn → Write → Receive feedback → Reflect → Improve</p></section>
 
-        <section className="section">
-          <div className="grid-3">
-            {sampleLessonSteps.map((step) => (
-              <article className="lesson-panel" key={step.title}>
-                <h3>{step.title}</h3>
-                <p>{step.description}</p>
-              </article>
-            ))}
-          </div>
-        </section>
+    <section className="section"><div className="lesson-cycle">{lessonSteps.map(([label, title, body, support]) => <article className="lesson-cycle-card" key={label}><p className="panel-label">{label}</p><h2>{title}</h2><p>{body}</p><strong>{support}</strong></article>)}</div></section>
 
-        <section className="section">
-          <article className="feature-strip">
-            <h3>Example feedback style</h3>
-            <p style={{ marginTop: "0.8rem" }}>
-              A feedback note might point out a vivid line, suggest a stronger
-              transition, and identify where the story could become clearer or
-              more focused. The goal is to guide improvement without flattening
-              the learner’s voice.
-            </p>
-          </article>
-        </section>
-      </Container>
-    </div>
-  );
+    <section className="section sample-teaching"><SectionHeading eyebrow="A sample teaching moment" title="From telling the reader to making them feel it." description="One of the first shifts young writers learn is that stronger description does not come from adding more adjectives. It comes from noticing the right details." /><div className="writing-comparison"><article><p className="panel-label">Before</p><p className="writing-example">The room was old and frightening.</p></article><article className="look-closer"><p className="panel-label">Look closer</p><p>Instead of naming the feeling, ask:</p><ul className="list"><li>What can the character see?</li><li>What small detail feels wrong or unexpected?</li><li>What can be heard?</li><li>What might the character physically notice?</li></ul></article><article className="writing-after"><p className="panel-label">After</p><p className="writing-example">The door dragged across the floorboards as she pushed it open. A strip of wallpaper hung loose beside the window, moving slightly although the room was still.</p></article></div><p className="sample-note">The second version does not tell the reader to be uneasy. The details create the feeling.</p><p className="sample-emphasis">HIRI teaches students to understand why that difference works — so they can make the choice themselves in new writing.</p></section>
+
+    <section className="section writing-task"><SectionHeading eyebrow="Now you write" title="Try the kind of decision a HIRI student would make." description={<>Imagine a character entering a place they have never seen before.<br /><br />Write <strong>80–120 words</strong> describing the moment without directly using words such as <strong>scary, beautiful, exciting, strange or sad.</strong><br /><br />Instead, make the reader understand the atmosphere through specific details, movement, sound or the character's reaction.</>} /><p className="task-prompt">What would you choose to make the reader notice first?</p></section>
+
+    <section className="section feedback-section"><SectionHeading eyebrow="What feedback might focus on" title="Feedback should help you see your writing differently." /><div className="feedback-examples"><article><p className="panel-label">What is working</p><p>You chose a physical detail instead of simply naming the emotion. That allows the reader to experience the scene rather than being told how to feel.</p></article><article><p className="panel-label">What to push further</p><p>Look at the final sentence. Is every description helping to create the same atmosphere, or is one detail there only because it sounds descriptive?</p></article><article><p className="panel-label">What to try next</p><p>Choose one detail that reveals how the character is reacting physically. That can deepen the scene without explaining the emotion directly.</p></article></div><p className="sample-emphasis">HIRI feedback is designed to help the student make the next decision — not rewrite the piece for them.</p></section>
+
+    <section className="section section-dark mentor-sample"><SectionHeading eyebrow="Beyond one lesson" title="The Mentor looks for development across your writing." description="A single piece of feedback can improve a paragraph. HIRI's Mentor looks more broadly. As students progress through the course, the Mentor helps them recognise recurring strengths, habits and areas for development — connecting what they are learning now with the work they completed earlier." /><p className="sample-emphasis">The aim is not simply to produce a better submission. It is to develop a better writer.</p></section>
+
+    <section className="section teaching-centre"><SectionHeading eyebrow="The teaching behind HIRI" title="Shaanzae's method stays at the centre." description={<>HIRI combines Shaanzae Shahid's teaching with a learning system designed to keep that guidance present between lessons.<br /><br />The Coach responds to the student's current writing.<br />The Mentor follows development across the course.<br />Shaanzae's teaching provides the method behind both.</>} /><p className="sample-emphasis">Human teaching, extended through intelligent personal support.</p></section>
+
+    <section className="section"><div className="cta-band"><p className="eyebrow">Ready to experience the full course?</p><h2>One lesson can change how you see a paragraph. Four weeks can change how you approach writing.</h2><p>HIRI gives you sixteen guided lessons, structured practice, personalised feedback and a Coach and Mentor that continue supporting your development from one lesson to the next.</p><div className="hero-actions"><ButtonLink href="https://app.hiri.uk/enroll" variant="secondary">Enroll Now</ButtonLink><ButtonLink href="/course" variant="ghost">View Course</ButtonLink></div></div></section>
+  </Container></div>;
 }
