@@ -16,6 +16,8 @@ export const footerNavigation = [
   ...primaryNavigation,
   { href: "/enrolment", label: "Enroll Now" },
   { href: "https://app.hiri.uk", label: "Continue Lessons" },
+  { href: "/privacy", label: "Privacy Policy" },
+  { href: "/terms", label: "Terms of Service" },
 ] as const;
 
 export const teachingPillars = [
