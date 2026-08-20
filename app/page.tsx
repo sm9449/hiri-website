@@ -40,7 +40,7 @@ export default function HomePage() {
         </div>
         <div className="profile-column">
           <p className="profile-label">Professional experience</p>
-          <div className="profile-item"><h3>O Level English Language Instructor</h3><p>Taught creative writing to approximately 450 students</p></div>
+          <div className="profile-item"><h3>O Level English Language Instructor</h3><p>Taught creative writing to approximately 450 students</p><a className="profile-link" href="https://www.linkedin.com/in/shaanza%C3%A9-shahid-b82418a2/" target="_blank" rel="noreferrer">View Shaanzae’s LinkedIn profile <span aria-hidden="true">↗</span></a></div>
         </div>
         <div className="profile-column">
           <p className="profile-label">Professional qualifications</p>

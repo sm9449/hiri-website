@@ -335,6 +335,8 @@ p {
 .profile-item:last-child { border-bottom: 0; }
 .profile-item h3 { margin: 0 0 .25rem; font-family: var(--font-cormorant), serif; font-size: clamp(1.35rem, 1.6vw, 1.65rem); font-weight: 600; line-height: 1.08; }
 .profile-item p, .profile-subsection p, .profile-additional p:last-child { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.5; }
+.profile-link { display: inline-flex; gap: .35rem; align-items: center; margin-top: .75rem; color: var(--accent); font-size: .78rem; font-weight: 700; letter-spacing: .02em; text-decoration: underline; text-decoration-color: var(--warm); text-underline-offset: .2em; }
+.profile-link:hover, .profile-link:focus-visible { color: var(--warm); }
 .profile-subsection { padding-top: 1rem; }
 .published-books { grid-column: 1; grid-row: 2; width: 100%; margin: 0; padding-top: .15rem; }
 .published-books img { width: 100%; height: auto; margin-top: .55rem; border-radius: var(--radius-sm); }
