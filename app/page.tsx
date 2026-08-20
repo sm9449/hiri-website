@@ -20,30 +20,26 @@ export default function HomePage() {
       <h1>Become a stronger, more confident writer.</h1>
       <p className="hero-lead">Learn Creative English with published author and educator <strong>Shaanzae Shahid</strong> through a four-week course built around her teaching.<br /><br />Develop your writing through expert lessons, structured practice and personalised feedback, with an <strong>AI Coach and Mentor modelled on Shaanzae’s methods</strong> to understand your writing, remember your progress and help you improve week after week.</p>
       <div className="hero-actions"><ButtonLink href="/course">View Course</ButtonLink><ButtonLink href="https://app.hiri.uk/enroll" variant="secondary">Enroll Now</ButtonLink></div>
-      <div className="credibility-strip" aria-label="Course credibility"><span>Cambridge PGCert in Teaching Creative Writing</span><span>University of Glasgow MLitt</span><span>Head of the English Department</span><span>Published Author</span><span>16 Guided Lessons</span></div>
+      <div className="credibility-strip" aria-label="Course credibility"><span>Cambridge PGCert in Teaching Creative Writing</span><span>University of Glasgow MLitt</span><span>Published Author</span><span>16 Guided Lessons</span></div>
     </div><aside className="hero-panel hero-authority"><p className="panel-label">The HIRI method</p><p className="authority-quote">Learn to think, shape and own your writing.</p><p>AI can already produce polished writing. HIRI teaches the abilities that matter beyond simply generating words: <strong>original thinking, judgement, voice and control.</strong><br /><br />Shaanzae’s teaching develops those abilities through guided practice, while your AI Coach and Mentor understand your writing, remember your progress and help you improve from one lesson to the next.</p><div className="tag-row"><Tag>Shaanzae-led</Tag><Tag>AI-supported</Tag><Tag>Your voice</Tag></div></aside></div></Container></section>
 
     <section className="section section-tint"><Container><SectionHeading title="Writing is more than producing words." description={<>AI can generate text. A writer still has to decide <strong>what to say, what to keep, what to change and what the reader should feel.</strong><br /><br />HIRI develops the thinking behind good writing — from imagination and original ideas to structure, voice, refinement and revision.</>} /></Container></section>
 
-    <section className="section authority-section"><Container><SectionHeading eyebrow="Shaanzae's experience & credentials" title="Learn from someone who teaches writing — and writes." description="Shaanzae Shahid is a published author, university lecturer and Head of the English Department at Lahore Grammar School Defence whose career spans creative writing, English Literature, international qualifications and curriculum leadership. HIRI is built around her teaching — not around generic AI-generated content." />
+    <section className="section authority-section"><Container><SectionHeading eyebrow="Shaanzae's experience & credentials" title="Learn from someone who teaches writing — and writes." description="Shaanzae Shahid is a published author and university lecturer whose career spans creative writing, English Literature, international qualifications and curriculum leadership. HIRI is built around her teaching — not around generic AI-generated content." />
       <div className="profile-composition">
         <figure className="profile-portrait">
           <Image src="/Shaanzae.jpeg" alt="Shaanzae Shahid" fill sizes="(max-width: 720px) 320px, 30vw" priority />
-          <figcaption><strong>Shaanzae Shahid</strong><span>Published author · Educator · Head of the English Department</span></figcaption>
+          <figcaption><strong>Shaanzae Shahid</strong><span>Published author · Educator</span></figcaption>
         </figure>
         <div className="profile-card">
         <div className="profile-column">
           <p className="profile-label">Education</p>
           <div className="profile-item"><h3>PGCert: Teaching Creative Writing</h3><p>University of Cambridge</p></div>
           <div className="profile-item"><h3>MLitt Fantasy: English Literature</h3><p>University of Glasgow</p></div>
-          <div className="profile-item"><h3>BA English</h3><p>University of London at LGS International Degree Programme</p></div>
+          <div className="profile-item"><h3>BA English</h3><p>University of London</p></div>
         </div>
         <div className="profile-column">
           <p className="profile-label">Professional experience</p>
-          <div className="profile-item"><h3>Head of Department: English</h3><p>Lahore Grammar School Defence</p></div>
-          <div className="profile-item"><h3>IB DP English A: Language and Literature Instructor</h3><p>LGS Defence</p></div>
-          <div className="profile-item"><h3>University of London Lecturer in English</h3><p>LGS International Degree Programme</p></div>
-          <div className="profile-item"><h3>O Level &amp; A Level English Literature Instructor</h3><p>LGS Defence</p></div>
           <div className="profile-item"><h3>O Level English Language Instructor</h3><p>Taught creative writing to approximately 450 students</p></div>
         </div>
         <div className="profile-column">

@@ -97,7 +97,7 @@ export const faqItems = [
   {
     question: "Who teaches the course?",
     answer:
-      "Shaanzae Shahid leads the course. She is a published author, Head of the English Department at Lahore Grammar School Defence, and holds a PGCert in Teaching Creative Writing from the University of Cambridge. Students learn directly from Shaanzae through focused video lessons, then apply those skills in their own writing. HIRI’s Coach provides personalised feedback on each student’s work, while the Mentor follows their development across the course. Both are shaped by Shaanzae’s teaching methods.",
+      "Shaanzae Shahid leads the course. She is a published author and holds a PGCert in Teaching Creative Writing from the University of Cambridge. Students learn directly from Shaanzae through focused video lessons, then apply those skills in their own writing. HIRI’s Coach provides personalised feedback on each student’s work, while the Mentor follows their development across the course. Both are shaped by Shaanzae’s teaching methods.",
   },
   {
     question: "How does the Coach work?",
