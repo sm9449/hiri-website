@@ -338,8 +338,11 @@ p {
 .profile-link { display: inline-flex; gap: .35rem; align-items: center; margin-top: .75rem; color: var(--accent); font-size: .78rem; font-weight: 700; letter-spacing: .02em; text-decoration: underline; text-decoration-color: var(--warm); text-underline-offset: .2em; }
 .profile-link:hover, .profile-link:focus-visible { color: var(--warm); }
 .profile-subsection { padding-top: 1rem; }
-.published-books { width: min(100%, 760px); margin: 2rem auto 0; text-align: center; }
-.published-books img { width: 100%; height: auto; margin: .55rem auto 0; border-radius: var(--radius-sm); }
+.published-books { width: min(100%, 1000px); margin: .5rem auto 0; text-align: center; }
+.published-books-content { display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(180px, 1fr); gap: 2.5rem; align-items: center; margin-top: .55rem; text-align: left; }
+.published-books img { width: 100%; height: auto; border-radius: var(--radius-sm); }
+.published-books ul { display: grid; gap: .85rem; margin: 0; padding: 0; list-style: none; color: var(--accent-strong); font-family: var(--font-cormorant), serif; font-size: clamp(1.35rem, 2vw, 1.8rem); line-height: 1.15; }
+.published-books li { padding-bottom: .7rem; border-bottom: 1px solid var(--border); }
 .profile-sub-label { color: var(--muted); font-size: .68rem; }
 .profile-list { padding-top: .45rem; }
 .profile-additional { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 3fr; gap: 1.5rem; margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
@@ -794,7 +797,9 @@ a:focus-visible {
   .profile-column + .profile-column { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
   .profile-additional { display: block; margin-top: 1.25rem; padding-top: 1.25rem; }
   .profile-additional p:last-child { margin-top: .65rem; }
-  .published-books { width: 100%; margin-top: 1.5rem; }
+  .published-books { width: 100%; margin-top: .5rem; }
+  .published-books-content { grid-template-columns: 1fr; gap: 1.25rem; }
+  .published-books ul { gap: .65rem; }
   .learning-flow { grid-template-columns: repeat(2, 1fr); }
   .mentor-grid, .compare-grid, .outcome-grid { grid-template-columns: 1fr; }
   .lesson-cycle, .writing-comparison { grid-template-columns: 1fr; }
