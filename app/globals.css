@@ -344,10 +344,6 @@ p {
 .profile-list { padding-top: .45rem; }
 .profile-additional { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 3fr; gap: 1.5rem; margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
 .profile-additional .profile-label { padding-top: .15rem; }
-.outcomes-strip { margin-top: 1.5rem; }
-.outcomes-strip > .profile-label { margin-bottom: .75rem; }
-.proof-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; color: var(--accent-strong); font-weight: 600; font-size: .9rem; }
-.proof-row span { padding: .85rem 1rem; border-left: 3px solid var(--warm); line-height: 1.45; }
 .section-tint { background: rgba(13,75,67,.06); }
 .learning-flow { display: grid; grid-template-columns: repeat(6, 1fr); gap: .65rem; }
 .flow-step { display: grid; gap: .8rem; min-height: 120px; padding: 1rem; align-content: space-between; border-radius: var(--radius-sm); background: var(--bg-elevated); border: 1px solid var(--border); }
@@ -789,7 +785,7 @@ a:focus-visible {
     grid-template-columns: 1fr;
   }
 
-  .profile-card, .proof-row, .comparison, .parent-panel { grid-template-columns: 1fr; }
+  .profile-card, .comparison, .parent-panel { grid-template-columns: 1fr; }
   .profile-composition { grid-template-columns: 1fr; }
   .profile-card { grid-column: 1; grid-row: auto; }
   .profile-portrait { width: min(100%, 360px); aspect-ratio: 4 / 5; margin: 0 auto; }
@@ -799,7 +795,6 @@ a:focus-visible {
   .profile-additional { display: block; margin-top: 1.25rem; padding-top: 1.25rem; }
   .profile-additional p:last-child { margin-top: .65rem; }
   .published-books { grid-column: 1; grid-row: auto; width: 100%; margin-top: 0; padding-top: 0; }
-  .proof-row { gap: .5rem; }
   .learning-flow { grid-template-columns: repeat(2, 1fr); }
   .mentor-grid, .compare-grid, .outcome-grid { grid-template-columns: 1fr; }
   .lesson-cycle, .writing-comparison { grid-template-columns: 1fr; }
