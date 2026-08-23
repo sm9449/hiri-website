@@ -340,7 +340,7 @@ p {
 .profile-subsection { padding-top: 1rem; }
 .published-books { width: 100%; margin: 1rem auto 0; text-align: center; }
 .published-books-content { display: block; width: 100%; margin-top: .55rem; text-align: center; }
-.published-books img { display: block; width: min(100%, 750px); height: auto; margin: 0 auto; border-radius: var(--radius-sm); }
+.published-books img { display: block; width: min(100%, 375px); height: auto; margin: 0 auto; border-radius: var(--radius-sm); }
 .published-books ul { display: flex; flex-wrap: wrap; justify-content: center; gap: .55rem 1.5rem; max-width: 1000px; margin: 1rem auto 0; padding: 0; list-style: none; color: var(--accent); font-size: .9rem; line-height: 1.4; }
 .published-books li { padding-bottom: .2rem; border-bottom: 1px solid var(--warm); }
 .profile-sub-label { color: var(--muted); font-size: .68rem; }
