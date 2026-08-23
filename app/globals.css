@@ -338,7 +338,7 @@ p {
 .profile-link { display: inline-flex; gap: .35rem; align-items: center; margin-top: .75rem; color: var(--accent); font-size: .78rem; font-weight: 700; letter-spacing: .02em; text-decoration: underline; text-decoration-color: var(--warm); text-underline-offset: .2em; }
 .profile-link:hover, .profile-link:focus-visible { color: var(--warm); }
 .profile-subsection { padding-top: 1rem; }
-.published-books { width: min(100%, 1000px); margin: .5rem auto 0; text-align: center; }
+.published-books { position: relative; width: min(100%, 1000px); margin: -18rem auto 0; text-align: center; }
 .published-books-content { display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(180px, 1fr); gap: 2.5rem; align-items: center; margin-top: .55rem; text-align: left; }
 .published-books img { width: 100%; height: auto; border-radius: var(--radius-sm); }
 .published-books ul { display: grid; gap: .85rem; margin: 0; padding: 0; list-style: none; color: var(--accent-strong); font-family: var(--font-cormorant), serif; font-size: clamp(1.35rem, 2vw, 1.8rem); line-height: 1.15; }
@@ -797,7 +797,7 @@ a:focus-visible {
   .profile-column + .profile-column { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
   .profile-additional { display: block; margin-top: 1.25rem; padding-top: 1.25rem; }
   .profile-additional p:last-child { margin-top: .65rem; }
-  .published-books { width: 100%; margin-top: .5rem; }
+  .published-books { width: 100%; margin: 0 auto; }
   .published-books-content { grid-template-columns: 1fr; gap: 1.25rem; }
   .published-books ul { gap: .65rem; }
   .learning-flow { grid-template-columns: repeat(2, 1fr); }
