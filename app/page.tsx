@@ -25,7 +25,7 @@ export default function HomePage() {
 
     <section className="section section-tint"><Container><SectionHeading title="Writing is more than producing words." description={<>AI can generate text. A writer still has to decide <strong>what to say, what to keep, what to change and what the reader should feel.</strong><br /><br />HIRI develops the thinking behind good writing — from imagination and original ideas to structure, voice, refinement and revision.</>} /></Container></section>
 
-    <section className="section authority-section"><Container><SectionHeading eyebrow="Shaanzae's experience & credentials" title="Learn from someone who teaches writing — and writes." description="Shaanzae Shahid is a published author and university lecturer whose career spans creative writing, English Literature, international qualifications and curriculum leadership. HIRI is built around her teaching — not around generic AI-generated content." />
+    <section className="section authority-section"><Container><SectionHeading eyebrow="Shaanzae's experience & credentials" title="Learn from someone who teaches writing — and writes." description="Shaanzae Shahid is a published author and university lecturer whose career spans creative writing, English Literature, international qualifications and curriculum leadership. HIRI is built on her teaching, expertise and approach to creative writing, enhanced by technology to create a guided learning experience." />
       <div className="profile-composition">
         <figure className="profile-portrait">
           <Image src="/Shaanzae.jpeg" alt="Shaanzae Shahid" fill sizes="(max-width: 720px) 320px, 30vw" priority />
@@ -36,7 +36,7 @@ export default function HomePage() {
           <p className="profile-label">Education</p>
           <div className="profile-item"><h3>PGCert: Teaching Creative Writing</h3><p>University of Cambridge</p></div>
           <div className="profile-item"><h3>MLitt Fantasy: English Literature</h3><p>University of Glasgow</p></div>
-          <div className="profile-item"><h3>BA English</h3><p>University of London</p></div>
+          <div className="profile-item"><h3>BA English</h3><p>University of London - LGS IDP</p></div>
         </div>
         <div className="profile-column">
           <p className="profile-label">Professional experience</p>
@@ -48,8 +48,8 @@ export default function HomePage() {
         </div>
         <div className="profile-additional"><p className="profile-label">Additional experience</p><p>Guest judge for creative writing competitions; panellist at Kinnaird College and Khayaal Festival; literature-festival organising committee member; guest lecturer at Lahore School of Economics; workshop facilitator at Kinnaird College.</p></div>
         </div>
-        <div className="published-books"><p className="profile-label">Published books</p><Image src="/books2.jpg" alt="Published books by Shaanzae Shahid" width={1000} height={697} /></div>
       </div>
+      <div className="published-books"><p className="profile-label">Published books</p><Image src="/books2.jpg" alt="Published books by Shaanzae Shahid" width={1000} height={697} /></div>
     </Container></section>
 
     <section className="section"><Container><SectionHeading eyebrow="Human + technology" title="Great teaching, amplified by intelligent technology." description="HIRI does not replace the teacher with AI. Shaanzae teaches the concepts, demonstrates the techniques and defines the learning journey. HIRI then helps each student apply those lessons through structured practice, feedback, reflection and personalised guidance." /><div className="grid-3"><article className="card"><p className="panel-label">Shaanzae teaches</p><h3>Expert instruction</h3><p>Demonstrations, examples and a carefully designed Creative English curriculum.</p></article><article className="card"><p className="panel-label">HIRI observes</p><h3>Useful evidence</h3><p>Each task is evaluated against the lesson objective and multiple dimensions of writing quality.</p></article><article className="card"><p className="panel-label">The student grows</p><h3>Visible progress</h3><p>Feedback, reflection and weekly Mentor guidance help students recognise strengths and correct weaknesses.</p></article></div></Container></section>
